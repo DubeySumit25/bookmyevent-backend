@@ -54,7 +54,7 @@ public class Event {
     @Column(nullable = false)
     private EventStatus status = EventStatus.DRAFT;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "organizer_id", nullable = false)
     private User organizer;
 
