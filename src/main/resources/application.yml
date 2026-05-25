@@ -3,18 +3,17 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://switchyard.proxy.rlwy.net:44553/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: root
-    password: gkyRGQsexUywvOztJaNiUzUgBouIxwgu
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
+    url: jdbc:postgresql://db.bnsiktxlzlqjouwytvdo.supabase.co:5432/postgres?sslmode=require
+    username: postgres
+    password: V3zxMRcdMxqzjVR6
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     open-in-view: false
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 
 
